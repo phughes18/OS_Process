@@ -1,0 +1,33 @@
+{ 
+	"$schema": "./assignment3-input-schema.json",
+	"options" : {
+		"table_size" : 5
+	}, 
+	"processes" : 
+    [{
+		"process_name": "process1",
+		"cpu_needed": 5,
+		"priority": 1
+	},
+	{
+		"process_name": "process2",
+		"cpu_needed" : 3,
+        "priority": 2 },
+	{
+		"process_name": "process3",
+		"cpu_needed": 6,
+		"priority": 0
+	},
+	{
+		"process_name": "process4",
+		"cpu_needed": 1,
+		"priority": 0
+	}
+    ],
+	"schedule": {
+		"scheduling_algorithm": "priority_round_robin",
+		"scheduling_quantum" : 2
+		
+	}
+}
+
